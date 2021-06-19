@@ -7,6 +7,13 @@ module.exports = {
     public: '/',
     '.elm-spa': '/.elm-spa',
   },
+  routes: [
+    {
+      match: 'routes',
+      src: '.*',
+      dest: '/index.html',
+    },
+  ],
   plugins: [
     'snowpack-plugin-elm',
   ],
