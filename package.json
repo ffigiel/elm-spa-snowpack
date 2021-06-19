@@ -1,0 +1,18 @@
+{
+  "name": "elm-spa-snowpack",
+  "version": "1.0.0",
+  "description": "built with [elm-spa](https://elm-spa.dev)",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && npm run dev",
+    "dev": "concurrently \"elm-spa watch\" \"snowpack dev\"",
+    "build": "elm-spa gen && snowpack build"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "concurrently": "6.0.2",
+    "elm-spa": "6.0.0",
+    "snowpack": "^3.5.9",
+    "snowpack-plugin-elm": "^0.4.3"
+  }
+}
